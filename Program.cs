@@ -207,23 +207,22 @@ namespace Snake
                                     Y = Snake.Points[Snake.Points.Count - 1].Y
                                 });
                                 LoadLeaders();
-                                Leaders.Add(new Leaders()
+                            
                                 Leadres.Add(new Leaders()
                                 {
                                     Name = User.Name,
                                     Points = Snake.Points.Count - 3
                                 });
                                 Leaders = Leaders.OrderByDescending(x => x.Points).ThenBy(x => x.Name).ToList();
-                                Leadres = Leadres.OrderByDescending(x => x.Points).ThenBy(x => x.Name).ToList();
+                             
                                 viewModelGames.Find(x => x.IdSnake == User.IdSnake).Top =
                                 Leaders.FindIndex(x => x.Points == Snake.Points.Count - 3 && x.Name == User.Name) + 1;
-                                Leadres.FindIndex(x => x.Points == Snake.Points.Count - 3 && x.Name == User.Name) + 1;
+                         
                             }
                         }
                         if (Snake.GameOver)
                         {
                             LoadLeaders();
-                            Leaders.Add(new Leaders()
                             Leadres.Add(new Leaders()
                             {
                                 Name = User.Name,
