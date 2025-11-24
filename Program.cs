@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    public class Program
+    pu class Program
     {
         public static List<ViewModelUserSettings> remoteIPAddress = new List<ViewModelUserSettings>();
         public static List<ViewModelGames> viewModelGames = new List<ViewModelGames>();
